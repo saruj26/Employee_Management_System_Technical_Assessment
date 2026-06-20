@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import EmployeeModal from './components/EmployeeModal';
 
-const API_URL = '/api/employees';
+const API_URL = `${import.meta.env.VITE_API_URL}/api/employees`;
 
 function App() {
   const [employees, setEmployees] = useState([]);
