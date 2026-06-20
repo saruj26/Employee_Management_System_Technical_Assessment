@@ -65,7 +65,12 @@ function App() {
   };
 
   return (
-    <div className="container mt-5 pt-3">
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <header className="bg-dark text-white text-center py-3">
+        <span className="fw-bold fs-4">Teceze</span>
+      </header>
+
+      <div className="container mt-4" style={{ flex: 1 }}>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Employee Management System</h2>
         <button className="btn btn-primary" onClick={handleAdd}>
@@ -163,6 +168,11 @@ function App() {
           </div>
         </div>
       )}
+    </div>
+
+      <footer className="bg-dark text-white text-center py-3">
+        <p className="mb-0">© 2026 Teceze. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
