@@ -13,6 +13,10 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error('MongoDB connection error:', err));
 
+app.get('/', (req, res) => {
+  res.json({ message: 'Employee Management API is running' });
+});
+
 app.use('/api/employees', employeeRoutes);
 
 const PORT = process.env.PORT || 5000;
