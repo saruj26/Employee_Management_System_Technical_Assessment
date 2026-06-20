@@ -7,9 +7,8 @@ const employeeRoutes = require('./routes/employees');
 const app = express();
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 app.use(express.json());
 
