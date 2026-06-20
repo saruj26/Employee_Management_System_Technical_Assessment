@@ -86,8 +86,7 @@ function App() {
               <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Employee Name</th>
               <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Designation</th>
               <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Salary</th>
-              <th style={{ backgroundColor: '#3081b0', color: 'white' }} className="text-center">Edit</th>
-              <th style={{ backgroundColor: '#3081b0', color: 'white' }} className="text-center">Delete</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }} className="text-center">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -110,13 +109,11 @@ function App() {
                   <td>Rs {emp.salary.toLocaleString()}</td>
                   <td className="text-center">
                     <button
-                      className="btn btn-sm btn-warning"
+                      className="btn btn-sm btn-warning me-2"
                       onClick={() => handleEdit(emp)}
                     >
                       Edit
                     </button>
-                  </td>
-                  <td className="text-center">
                     <button
                       className="btn btn-sm btn-danger"
                       onClick={() => confirmDelete(emp._id)}
