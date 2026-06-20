@@ -66,11 +66,11 @@ function App() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header className="bg-dark text-white text-center py-3">
+      <header className="text-white text-center py-3" style={{ backgroundColor: '#3081b0' }}>
         <span className="fw-bold fs-4">Teceze</span>
       </header>
 
-      <div className="container mt-4" style={{ flex: 1 }}>
+      <div className="container mt-5 pt-4" style={{ flex: 1 }}>
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="fw-bold">Employee Management System</h2>
         <button className="btn btn-primary" onClick={handleAdd}>
@@ -80,14 +80,14 @@ function App() {
 
       <div className="table-responsive">
         <table className="table table-bordered table-hover align-middle">
-          <thead className="table-dark">
-            <tr>
-              <th>Employee No</th>
-              <th>Employee Name</th>
-              <th>Designation</th>
-              <th>Salary</th>
-              <th className="text-center">Edit</th>
-              <th className="text-center">Delete</th>
+          <thead>
+            <tr style={{ backgroundColor: '#3081b0', color: 'white' }}>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Employee No</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Employee Name</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Designation</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }}>Salary</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }} className="text-center">Edit</th>
+              <th style={{ backgroundColor: '#3081b0', color: 'white' }} className="text-center">Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -170,7 +170,7 @@ function App() {
       )}
     </div>
 
-      <footer className="bg-dark text-white text-center py-3">
+      <footer className="text-white text-center py-3" style={{ backgroundColor: '#3081b0' }}>
         <p className="mb-0">© 2026 Teceze. All rights reserved.</p>
       </footer>
     </div>
